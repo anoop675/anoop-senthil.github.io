@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anoop Senthil — AI Engineer | ML Engineer | Applied AI</title>
+    <meta
+      name="description"
+      content="Anoop Senthil is an AI engineer in London working on LLM engineering, AI agents, retrieval-augmented generation, and multimodal systems."
+    />
+    <meta name="author" content="Anoop Senthil" />
+    <meta property="og:title" content="Anoop Senthil — AI Engineer | ML Engineer | Applied AI" />
+    <meta
+      property="og:description"
+      content="LLM engineering, AI agents, retrieval-augmented generation, and multimodal systems. MSc Artificial Intelligence, Queen Mary University of London."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=9" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="wordmark" href="#top">Anoop Senthil</a>
+        <nav aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#preprints">Preprints</a>
+          <a href="#education">Education</a>
+          <a href="#appointments">Appointments</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="resume" href="assets/Anoop_Senthil_Resume.pdf?v=4" download="Anoop_Senthil_Resume.pdf">Resume</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="intro" id="top">
+        <div class="intro-text">
+          <h1>Anoop Senthil</h1>
+          <p class="role">AI Engineer | ML Engineer | Applied AI</p>
+          <p class="focus">
+            LLMs · AI Agents · RAG · Machine Learning · Computer Vision ·
+            Multimodal AI
+          </p>
+          <p class="lede">
+            I build and evaluate AI systems that can reason, retrieve, perceive,
+            and act. My work spans LLM engineering, AI agents,
+            retrieval-augmented generation, machine learning, and multimodal
+            systems, with experience across model architecture, training,
+            evaluation, and end-to-end system design.
+          </p>
+          <p class="lede">
+            I’m particularly interested in turning advances in AI research into
+            reliable, scalable systems that can solve complex real-world
+            problems.
+          </p>
+          <p class="lede">
+            I’m always keen to connect, exchange ideas, and explore new
+            conversations and opportunities across AI and technology.
+          </p>
+          <p class="location">London, United Kingdom</p>
+          <p class="intro-links">
+            <a href="mailto:anoopsenthil13@gmail.com">anoopsenthil13@gmail.com</a>
+            <a href="https://github.com/anoop675" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/anoop-senthil-9b7336220/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://arxiv.org/abs/2608.28707" target="_blank" rel="noreferrer">arXiv</a>
+          </p>
+        </div>
+        <figure class="portrait">
+          <img src="assets/portrait.jpg" alt="Anoop Senthil" width="760" height="760" />
+        </figure>
+      </section>
+
+      <section class="interests-wrap" aria-label="Interests">
+        <div class="interests">
+          <h2 id="interests-heading">Interests</h2>
+          <ul>
+            <li>Computer Vision</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Large Language Models (LLMs)</li>
+            <li>Retrieval-Augmented Generation (RAG)</li>
+            <li>AI Agents</li>
+          </ul>
+        </div>
+        <div class="interests">
+          <h2 id="niche-interests-heading">Niche Interests</h2>
+          <ul>
+            <li>Vision–language models and visual perception (VLMs)</li>
+            <li>Grounded LLM reasoning and hallucination mitigation</li>
+            <li>Hybrid sparse–dense retrieval and production RAG</li>
+            <li>Multimodal LLM fine-tuning</li>
+            <li>Multi-agent systems for structured analysis</li>
+          </ul>
+        </div>
+        <div class="interests">
+          <h2 id="skills-heading">Technologies and Skills</h2>
+          <ul class="cv-points">
+            <li>
+              <span>Languages</span>
+              Python, Java, C, SQL
+            </li>
+            <li>
+              <span>Frameworks and libraries</span>
+              PyTorch, Hugging Face, LangChain, LangGraph, CrewAI, BMAD Method,
+              OpenCV, spaCy, Spring Boot
+            </li>
+            <li>
+              <span>Developer tools</span>
+              Cursor, Claude Code, Git, GitHub, Jupyter, Docker
+            </li>
+            <li>
+              <span>Databases and cloud</span>
+              PostgreSQL, Qdrant, Amazon Web Services
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block split" id="projects">
+        <h2>Selected projects</h2>
+        <div class="block-body">
+        <article class="entry">
+          <header>
+            <h3>Hybrid retrieval-augmented generation for scientific question answering</h3>
+            <p class="meta">August 2026 – September 2026 · Python, ColBERT, Qwen2.5</p>
+          </header>
+          <p>
+            A hybrid RAG pipeline over the SciFact corpus: BM25 first-stage
+            retrieval, ColBERT-style late-interaction re-ranking, and
+            citation-backed generation from a 4-bit quantised Qwen2.5-3B model.
+            The ColBERT projection layer was fine-tuned with InfoNCE on
+            BM25-mined hard negatives.
+          </p>
+          <table class="results">
+            <caption>Retrieval quality on 300 test queries</caption>
+            <thead>
+              <tr>
+                <th>nDCG@10</th>
+                <th>AP@10</th>
+                <th>RR@10</th>
+                <th>Re-ranking latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0.6858</td>
+                <td>0.6479</td>
+                <td>0.6581</td>
+                <td>43.1 ms / query</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="source">
+            <a href="https://github.com/anoop675/hybrid_rag" target="_blank" rel="noreferrer">Source code</a>
+          </p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>Autonomous equity research and valuation agent</h3>
+            <p class="meta">April 2026 – May 2026 · CrewAI, Llama 3.3 70B, Docker</p>
+          </header>
+          <p>
+            A five-agent pipeline that produces investment reports from a
+            natural-language ticker or cryptocurrency name. Components cover
+            identifier resolution, financial data retrieval, news sentiment,
+            and a ten-year discounted cash-flow model with WACC-based
+            discounting. Retrieval over SEC 10-K filings uses Qdrant, and reports
+            are generated with ReportLab.
+          </p>
+          <p class="source">
+            <a href="https://github.com/anoop675/mas-equity-researcher" target="_blank" rel="noreferrer">Source code</a>
+          </p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>Evolutionary-augmented image–text retrieval</h3>
+            <p class="meta">October 2025 – January 2026 · Skip-Gram, evolutionary search, MobileNetV3</p>
+          </header>
+          <p>
+            A lightweight multimodal retrieval system that maps images to
+            semantically related text labels without a large pretrained
+            foundation model. A Skip-Gram backbone trained on Visual Genome was
+            expanded with a (1+λ) evolutionary algorithm to incorporate
+            CIFAR-100 labels, then aligned to MobileNetV3 features with InfoNCE.
+            Image-to-text Recall@10: 91%.
+          </p>
+          <p class="source">
+            <a href="https://github.com/anoop675/evolutionary_multimodal_retrieval" target="_blank" rel="noreferrer">Source code</a>
+          </p>
+        </article>
+
+        <article class="entry">
+          <header>
+            <h3>Vision-to-RAG cooking agent</h3>
+            <p class="meta">LangGraph, CLIP, FAISS, Qwen2.5</p>
+          </header>
+          <p>
+            An agentic system that generates recipes from a photograph of
+            ingredients or a prepared dish, combining CLIP, Qwen2.5-3B, FAISS
+            retrieval, Tavily, and Llama 3.
+          </p>
+          <p class="source">
+            <a href="https://github.com/anoop675/multimodal-cook-rag-agent" target="_blank" rel="noreferrer">Source code</a>
+          </p>
+        </article>
+        </div>
+      </section>
+
+      <section class="block alt split" id="preprints">
+        <h2>Preprints</h2>
+        <div class="block-body">
+        <article class="entry paper">
+          <p class="meta">Preprint · arXiv:2608.28707</p>
+          <h3>
+            ReVA: A Region-Aware Visual Assistant for Visually Grounded Question
+            Answering
+          </h3>
+          <p class="byline">Anoop Senthil. Queen Mary University of London.</p>
+          <p>
+            Designed ReVA, a region-aware VQA model that combines global scene
+            context with localized visual evidence to improve fine-grained visual
+            grounding and reduce hallucination.
+          </p>
+          <p>
+            ReVA connects a frozen CLIP ViT-L/14 vision encoder to
+            Qwen2.5-7B-Instruct through separate image and region bridges.
+            Object proposals from RAM++, spaCy, and Grounding DINO supply
+            bounding boxes. RoI-aligned intermediate ViT features are mapped to
+            region tokens so that answers are conditioned on local visual
+            evidence as well as global scene context.
+          </p>
+          <table class="results">
+            <caption>Benchmark scores</caption>
+            <thead>
+              <tr>
+                <th>VQAv2</th>
+                <th>MMBench</th>
+                <th>SEED-Bench</th>
+                <th>POPE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>73.79%</td>
+                <td>67.1%</td>
+                <td>66.75%</td>
+                <td>82.85 F1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            To read the paper or download the implementation and weights, use
+            the links below.
+          </p>
+          <p class="source">
+            <a href="https://arxiv.org/abs/2608.28707" target="_blank" rel="noreferrer">Read the paper on arXiv</a>
+            <a href="https://github.com/anoop675/reva" target="_blank" rel="noreferrer">Open the code and weights on GitHub</a>
+          </p>
+        </article>
+        </div>
+      </section>
+
+      <section class="block split" id="education">
+        <h2>Education</h2>
+        <div class="block-body">
+        <table class="cv">
+          <tbody>
+            <tr>
+              <th scope="row">Sep 2025 – Sep 2026</th>
+              <td>
+                <strong>Master of Science, Artificial Intelligence</strong>
+                <p class="cv-place">Queen Mary University of London, London, United Kingdom</p>
+                <ul class="cv-points">
+                  <li>
+                    <span>Achievements</span>
+                    Recipient of the Global Talent Scholarship (£5,000) for
+                    academic excellence
+                  </li>
+                  <li>
+                    <span>Coursework</span>
+                    Machine Learning, Neural Networks, NLP, Information
+                    Retrieval, AI Ethics
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Jul 2021 – Jul 2025</th>
+              <td>
+                <strong>Bachelor of Technology, Computer Science and Engineering</strong>
+                <p class="cv-place">Vellore Institute of Technology, Vellore, India</p>
+                <ul class="cv-points">
+                  <li>
+                    <span>Coursework</span>
+                    Data Structures &amp; Algorithms, Database Management, Cloud
+                    Computing, Software Engineering
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="block split" id="appointments">
+        <h2>Appointments</h2>
+        <div class="block-body">
+        <table class="cv">
+          <tbody>
+            <tr>
+              <th scope="row">Jan 2025 – May 2025</th>
+              <td>
+                <strong>AI Research and Development (R&amp;D) Intern</strong>
+                <p class="cv-place">
+                  DRDO, Ministry of Defence, Government of India, Bangalore
+                </p>
+                <p>
+                  Developed an Object Diagram Recognition system using Computer
+                  Vision and Deep Learning to interpret control-law diagram
+                  images and automatically generate executable C code.
+                </p>
+                <p>
+                  Fine-tuned YOLO and integrated efficient line-detection
+                  algorithms using OpenCV to extract precise component bounding
+                  boxes and control-flow coordinates from noisy diagram images.
+                  Constructed logical representations of diagrams as directed
+                  acyclic graphs (DAGs) and applied graph-parsing techniques for
+                  automated code generation, reducing manual coding effort and
+                  syntax errors in complex control-law diagrams.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Aug 2023 – Nov 2023</th>
+              <td>
+                <strong>Software Developer Intern</strong>
+                <p class="cv-place">Pivotrics, Bangalore</p>
+                <p>
+                  Developed scalable RESTful APIs for a SaaS-based payment
+                  platform to enhance customer experience, utilizing Spring Boot,
+                  WebFlux, and PostgreSQL.
+                </p>
+                <p>
+                  Optimized system performance during peak load by adopting
+                  reactive programming principles, designing non-blocking,
+                  asynchronous APIs with effective back-pressure handling for
+                  seamless management of product information.
+                </p>
+                <p>
+                  Implemented JWT-based authentication and authorisation with
+                  robust access control policies using Spring Security.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="block" id="about">
+        <h2>About</h2>
+        <div class="about-copy">
+          <p>
+            I’m an AI/ML Engineer with experience in computer vision, multimodal
+            AI, natural language processing (NLP), and agentic systems,
+            passionate about building AI that can perceive, reason, and solve
+            real-world problems.
+          </p>
+          <p>
+            I’m currently completing an MSc in Artificial Intelligence at Queen
+            Mary University of London, where I design and build end-to-end AI
+            systems spanning multimodal large language models (MLLMs),
+            Retrieval-Augmented Generation (RAG), and multi-agent workflows. My
+            projects range from developing vision-language models that improve
+            visual reasoning and reduce hallucinations to autonomous AI agents
+            capable of executing complex, multi-step tasks with minimal human
+            intervention.
+          </p>
+          <p>
+            Alongside research, I apply proven ML engineering practices and
+            inferential statistics to develop and evaluate AI systems that are
+            scalable and production-ready, with a strong emphasis on
+            experimentation, versioning, deployment, and maintainable software
+            design.
+          </p>
+          <p>
+            Previously, as an AI R&amp;D Intern at DRDO, I developed computer
+            vision and deep learning systems for automated diagram understanding
+            and image-to-code generation, gaining hands-on experience building
+            production-oriented AI solutions.
+          </p>
+          <p>
+            My current interests lie at the intersection of multimodal foundation
+            models, agentic AI, LLM reasoning, context engineering and autonomous
+            decision-making. I’m particularly interested in building AI systems
+            that combine perception, retrieval, planning, memory, and tool use
+            to solve complex problems reliably and at scale.
+          </p>
+          <p>
+            Open to ML Engineer, Applied AI Engineer, Data Scientist, and AI
+            Research Engineer roles.
+          </p>
+        </div>
+      </section>
+
+      <section class="block contact" id="contact">
+        <h2>Contact</h2>
+        <address>
+          <a href="mailto:anoopsenthil13@gmail.com">anoopsenthil13@gmail.com</a>
+          <a href="tel:+447386290457">+44 7386 290457</a>
+          <a href="tel:+919606149003">+91 9606149003</a>
+          <a href="https://github.com/anoop675" target="_blank" rel="noreferrer">github.com/anoop675</a>
+          <a href="https://www.linkedin.com/in/anoop-senthil-9b7336220/" target="_blank" rel="noreferrer">linkedin.com/in/anoop-senthil-9b7336220</a>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Anoop Senthil. All rights reserved.</p>
+      <a href="#top">Return to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
