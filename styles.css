@@ -395,10 +395,6 @@ footer a:hover {
   content: ": ";
 }
 
-.about-copy {
-  max-width: 42rem;
-}
-
 .contact address {
   font-style: normal;
   margin-top: 1rem;
