@@ -83,6 +83,10 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
+.wordmark:hover {
+  color: var(--white);
+}
+
 .masthead nav {
   display: flex;
   flex-wrap: wrap;
