@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.75rem;
 }
 
 body {
@@ -474,6 +475,10 @@ footer {
 }
 
 @media (max-width: 860px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+
   .masthead-inner {
     flex-wrap: wrap;
   }
