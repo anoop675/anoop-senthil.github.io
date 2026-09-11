@@ -217,13 +217,68 @@ footer a:hover {
 
 .interests {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 2rem;
-  padding: 1.8rem 0 0;
+  align-items: start;
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.interests:first-child {
+  border-top: 0;
 }
 
 .interests:last-child {
-  padding-bottom: 1.8rem;
+  padding-bottom: 2.2rem;
+}
+
+.interests h2 {
+  margin: 0;
+  padding-top: 0.15rem;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.8rem;
+  margin: 0;
+  padding: 0.15rem 0 0;
+  list-style: none;
+}
+
+.topic-grid li {
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--navy);
+  color: var(--text);
+}
+
+.skill-groups {
+  margin: 0;
+  display: grid;
+}
+
+.skill-groups > div {
+  display: grid;
+  grid-template-columns: 11.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.skill-groups > div:first-child {
+  border-top: 0;
+  padding-top: 0.2rem;
+}
+
+.skill-groups dt {
+  margin: 0;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.skill-groups dd {
+  margin: 0;
 }
 
 .interests h2,
@@ -233,6 +288,10 @@ footer a:hover {
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--navy-deep);
+}
+
+.interests h2 {
+  margin: 0;
 }
 
 .block.split {
@@ -250,11 +309,6 @@ footer a:hover {
 .block.split .block-body .entry:first-of-type {
   border-top: 0;
   padding-top: 0;
-}
-
-.interests ul {
-  margin: 0;
-  padding-left: 1.15rem;
 }
 
 .block {
@@ -435,7 +489,9 @@ footer {
 
   .intro,
   .interests,
-  .block.split {
+  .block.split,
+  .skill-groups > div,
+  .topic-grid {
     grid-template-columns: 1fr;
   }
 
