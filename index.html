@@ -37,7 +37,7 @@
           <a href="#appointments">Appointments</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="resume" href="assets/Anoop_Senthil_Resume.pdf?v=7" download="Anoop_Senthil_Resume.pdf">Resume</a>
+        <a class="resume" href="assets/Resume_Anoop_Senthil.pdf?v=8" download="Resume_Anoop_Senthil.pdf">Resume</a>
       </div>
     </header>
 
@@ -128,15 +128,27 @@
         <div class="block-body">
         <article class="entry">
           <header>
-            <h3>Hybrid retrieval-augmented generation for scientific question answering</h3>
+            <h3>Hybrid RAG system for scientific question answering</h3>
             <p class="meta">August 2026 – September 2026 · Python, ColBERT, Qwen2.5</p>
           </header>
           <p>
-            A hybrid RAG pipeline over the SciFact corpus: BM25 first-stage
-            retrieval, ColBERT-style late-interaction re-ranking, and
-            citation-backed generation from a 4-bit quantised Qwen2.5-3B model.
-            The ColBERT projection layer was fine-tuned with InfoNCE on
-            BM25-mined hard negatives.
+            Built a hybrid retrieval-augmented generation pipeline over the
+            SciFact corpus, combining sparse BM25 first-stage retrieval with
+            ColBERT-style late-interaction re-ranking to supply grounded,
+            citation-backed answers from a 4-bit quantized Qwen2.5-3B large
+            language model.
+          </p>
+          <p>
+            Implemented a two-stage pipeline where BM25 surfaces top-100
+            candidates for ColBERT MaxSim re-ranking before the top-5 passages
+            go to Qwen for cited generation, with the ColBERT projection layer
+            fine-tuned via InfoNCE on BM25-mined hard negatives to sharpen
+            domain-specific relevance ranking.
+          </p>
+          <p>
+            Evaluated hybrid retrieval on 300 test queries, achieving 0.6858
+            nDCG@10, 0.6479 AP@10, and 0.6581 RR@10, with a re-ranking latency
+            of 43.1&nbsp;ms/query.
           </p>
           <table class="results">
             <caption>Retrieval quality on 300 test queries</caption>
@@ -165,15 +177,23 @@
         <article class="entry">
           <header>
             <h3>Autonomous equity research and valuation agent</h3>
-            <p class="meta">April 2026 – May 2026 · CrewAI, Llama 3.3 70B, Docker</p>
+            <p class="meta">April 2026 – September 2026 · CrewAI, Groq, Docker</p>
           </header>
           <p>
-            A five-agent pipeline that produces investment reports from a
-            natural-language ticker or cryptocurrency name. Components cover
-            identifier resolution, financial data retrieval, news sentiment,
-            and a ten-year discounted cash-flow model with WACC-based
-            discounting. Retrieval over SEC 10-K filings uses Qdrant, and reports
-            are generated with ReportLab.
+            Built a multi-agent financial research application with CrewAI and
+            Groq, orchestrating natural-language ticker queries across
+            Python-based market data, RSS news, SEC filings, and automated
+            ReportLab PDF generation.
+          </p>
+          <p>
+            Developed AI agents for document Q&amp;A, bull/bear analysis,
+            sentiment and risk assessment, alongside a 10-year DCF valuation
+            model using WACC and rule-based stock recommendations.
+          </p>
+          <p>
+            Built a Qdrant-based RAG pipeline over SEC 10-K Item 1A disclosures
+            using MiniLM embeddings and containerized the application with
+            Docker Compose, with GPT-OSS 20B LLM inference served through Groq.
           </p>
           <p class="source">
             <a href="https://github.com/anoop675/mas-equity-researcher" target="_blank" rel="noreferrer">Source code</a>
@@ -182,34 +202,30 @@
 
         <article class="entry">
           <header>
-            <h3>Evolutionary-augmented image–text retrieval</h3>
-            <p class="meta">October 2025 – January 2026 · Skip-Gram, evolutionary search, MobileNetV3</p>
+            <h3>Evolutionary-augmented image–text retrieval system</h3>
+            <p class="meta">October 2025 – November 2026 · Skip-Gram, Neo4j, MobileNetV3</p>
           </header>
           <p>
-            A lightweight multimodal retrieval system that maps images to
-            semantically related text labels without a large pretrained
-            foundation model. A Skip-Gram backbone trained on Visual Genome was
-            expanded with a (1+λ) evolutionary algorithm to incorporate
-            CIFAR-100 labels, then aligned to MobileNetV3 features with InfoNCE.
-            Image-to-text Recall@10: 91%.
+            Designed a lightweight multimodal search system retrieving
+            semantically relevant text labels for any input image, enabling
+            accurate visual search without large pre-trained foundation models
+            or expensive retraining.
+          </p>
+          <p>
+            Constructed a custom Skip-Gram language backbone trained on a Visual
+            Genome word co-occurrence knowledge graph stored in Neo4j, then
+            expanded it via a (1+λ) evolutionary algorithm to integrate 68 new
+            CIFAR-100 labels while preserving its semantic structure without
+            retraining.
+          </p>
+          <p>
+            Aligned MobileNetV3 image features to the enriched text space using
+            InfoNCE contrastive loss, achieving 91% Recall@10 for image-to-text
+            retrieval on the CIFAR-100 test set, with strong generalization
+            across related categories.
           </p>
           <p class="source">
             <a href="https://github.com/anoop675/evolutionary_multimodal_retrieval" target="_blank" rel="noreferrer">Source code</a>
-          </p>
-        </article>
-
-        <article class="entry">
-          <header>
-            <h3>Vision-to-RAG cooking agent</h3>
-            <p class="meta">LangGraph, CLIP, FAISS, Qwen2.5</p>
-          </header>
-          <p>
-            An agentic system that generates recipes from a photograph of
-            ingredients or a prepared dish, combining CLIP, Qwen2.5-3B, FAISS
-            retrieval, Tavily, and Llama 3.
-          </p>
-          <p class="source">
-            <a href="https://github.com/anoop675/multimodal-cook-rag-agent" target="_blank" rel="noreferrer">Source code</a>
           </p>
         </article>
         </div>
