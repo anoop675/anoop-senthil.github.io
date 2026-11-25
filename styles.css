@@ -103,27 +103,14 @@ a:hover {
   gap: 0.35rem 1.25rem;
 }
 
-.masthead nav a,
-.resume {
+.masthead nav a {
   color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
   font-size: 0.92rem;
 }
 
-.masthead nav a:hover,
-.resume:hover {
+.masthead nav a:hover {
   color: var(--white);
-}
-
-.resume {
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 6px;
-  padding: 0.35rem 0.8rem;
-  color: var(--white);
-}
-
-.resume:hover {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 main {
